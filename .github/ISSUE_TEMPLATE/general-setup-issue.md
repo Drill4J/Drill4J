@@ -11,71 +11,31 @@ assignees: RomanDavlyatshin
 
 <!--
 Please follow the template.
-Issues not adhering to that won't be addressed.
+It is difficult to address issues without enough details.
+Thank you.
 -->
 
 ## Description
 
-Issue:
-
-<!-- A brief description summarizing your issue in 2-3 sentences -->
+<!-- A brief description summarizing your issue -->
 
 ## Details
 
-1. Your application
+1. Attach full log files of your Application Under Test. Make sure it includes Drill4J Agent ASCII logo followed by version 
+   <!-- Drill4J ASCII logo example:
+     ____    ____                 _       _          _  _                _      
+    |  _"\U |  _"\ u     ___     |"|     |"|        | ||"|            U |"| u   
+   /| | | |\| |_) |/    |_"_|  U | | u U | | u      | || |_          _ \| |/    
+   U| |_| |\|  _ <       | |    \| |/__ \| |/__     |__   _|        | |_| |_,-. 
+    |____/ u|_| \_\    U/| |\u   |_____| |_____|      /|_|\          \___/-(_/  
+     |||_   //   \\_.-,_|___|_,-.//  \\  //  \\      u_|||_u          _//       
+   (__)_) (__)  (__)\_)-' '-(_/(_")("_)(_")("_)     (__)__)         (__)
+   JavaAgent (*version*)
+   --->
 
+2. Describe your tech stack (for both application and tests) 
    - OS: <!-- e.g. Windows 10, MacOs, Alpine, etc -->
    - Tech stack: <!-- e.g. Java + Spring Boot, or backend with Java + frontend with Typescript & React -->
-
-2. Your tests
-
-   - OS: <!-- e.g. Windows 10, MacOs, Alpine, etc -->
-   - Tech stack: <!-- e.g. Java + TestNG, Java + TestNG + Selenium, NodeJS + Jest, Postman -->
-   - Other relevant test setup details: <!-- e.g. Selenium & browser version for automated UI tests -->
-
-3. Drill4J services configuration and versions
-    <!--
-      docker-compose.yml and .env files used to launch Drill4J services
-      if you are not using Docker and manage Drill4J services manually provide the appropriate component list with versions
-    -->
-
-   - docker-compose.yml
-   - .env file
-
-4. Log files (skip if some are unapplicable):
-    <!--
-      IMPORTANT:
-      when writing logs to file make sure to output stderr as well
-    -->
-
-   - Drill4J Admin Backend service
-      <!--
-        Use "docker ps" and "docker logs" commands to get container log
-        IMPORTANT: to set the highest log level pass - LOG_LEVEL=trace to "environment" section.
-        example: https://github.com/Drill4J/example-configs/blob/main/0.8.0/prerelease/api-tests/docker-compose-admin.yml#L18
-      -->
-
-   - Drill4J Java Agent
-      <!--
-        Drill4J Java Agent writes logs in the same process as your application.
-        IMPORTANT: to set the highest log level pass ,logLevel=TRACE at the end of -agentpath string
-        example: https://github.com/Drill4J/example-configs/blob/1d079dbd973bb139500d8b4cb8eebe115f63f9e7/0.8.0/prerelease/api-tests/docker-compose-your-app.yml#L11
-      -->
-
-   - Drill4J Auto Test Agent
-      <!--
-        Drill4J Autotest Agent writes logs to the file specified in Drill4J Agent Runner configuration.
-        Make sure to set logLevel to TRACE.
-        Example:
-        - Gradle: https://github.com/Drill4J/example-configs/blob/1d079dbd973bb139500d8b4cb8eebe115f63f9e7/0.8.0/prerelease/api-tests/example--build.gradle#L27
-        - Maven: https://github.com/Drill4J/example-configs/blob/1d079dbd973bb139500d8b4cb8eebe115f63f9e7/0.8.0/prerelease/api-tests/example--pom.xml#L23
-      -->
-
-   - Drill4J DevTools Proxy (for Selenium-based tests)
-     <!-- attach docker container logs -->
-
-   - Drill4J JavaScript Agent (when applicable)
-     <!-- attach docker container logs -->
 
 ## Screenshots
 
